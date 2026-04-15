@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Outlet, useNavigate } from "react-router-dom";
+import React from "react";
+import { Outlet } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 
 
@@ -15,7 +15,7 @@ const DashboardLayout: React.FC = () => {
             <div className="dash-body">
                 {/* Sidebar */}
 
-                <Sidebar creditsRemaining={1} creditsTotal={170} />
+                <Sidebar creditsRemaining={50} creditsTotal={170} />
 
                 {/* Page content */}
                 <main className="dash-main">
